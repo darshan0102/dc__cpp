@@ -9,7 +9,7 @@ int main()
 
     
     cout << "Enter a value: ";
-    cin >> number;
+    cin >> number; 
 
 
     if (number % 5 == 0)
