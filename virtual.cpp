@@ -28,6 +28,6 @@ int main()
 	b ->showprint();
 
     b = &d;
-	b->showprint();
+	b ->showprint();
 
 }
