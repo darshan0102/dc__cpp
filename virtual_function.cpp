@@ -17,7 +17,7 @@ public:
         cout << "derived class output print "; 
     }
 
-};
+};  
 
 int main()
 {
