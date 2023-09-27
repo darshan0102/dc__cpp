@@ -1,40 +1,40 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Animal
+class A
 {
-    public :
-    void animal()
-    {
-        cout << "animal can :" << endl;
-    }
+ 	public:
+ 	int x;
 };
-class Bird : public Animal
+class B : public A
 {
-    public :
-    void fly()
-    {
-        animal();
-        cout << "bird can fly :" << endl;
-    }
-
-}; 
- 
-class Fish : public Animal
-{ 
-   public :
-   void swim()
-   {
-      animal();
-      cout << "fish can swim" << endl;
-   }
+ 	public:
+ 	B()    
+ 	{
+ 	   x = 10;
+ 	}
+};
+class C
+ {
+ 	public:
+ 	int y;
+ 	C()  
+ 	{
+ 	    y = 4;
+        }
+};
+class D : public B, public C   
+{
+ 	public:
+ 	void sum()
+ 	{
+ 	    cout << "Sum= " << x + y;
+ 	}
 };
 
 int main()
 {
-    Bird bird;
-    Fish fish;
-
-    bird.fly();
-    fish.swim();
-}
+         D obj1;          
+ 	obj1.sum();
+ 	return 0;
+}      
